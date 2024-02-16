@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cp editor</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-files">
+            <div class="file">
+                <a href="">File</a>
+            </div>
+            <div class="edit">
+                <a href="">Edit</a>
+            </div>
+            <div class="actions">
+                <a href="">Actions</a>
+            </div>
+            <div class="view">
+                <a href="">View</a>
+            </div>
+            <div class="options">
+                <a href="">Options</a>
+            </div>
+            <div class="help">
+                <a href="">Help</a>
+            </div>
+        </div>
+        <div class="left-input">
+            <div class="main-code">
+                <textarea name="" id="code-input" cols="100" rows="35">
+                </textarea>
+            </div>
+            <div class="compiling">
+                <button type="button">Compile</button>
+                <button type="button">Run</button>
+                <button type="button">Compile and Run</button>
+            </div>
+        </div>
+        <div class="right-input">
+            <div class="top-messages">
+                <div class="message">
+                    <p><b>Messages</b></p>
+                </div>
+                <div class="message-btns">
+                    <button type="button"><p>Clear</p></button>
+                    <button type="button"><p>C++</p></button>
+                </div>
+                <div class="messsage-out">
+                    <textarea name="" id="mes-input" cols="73" rows="10">
+                    </textarea>
+                </div>
+            </div>
+            <div class="left-input-test-bot">
+                <div class="cases-text-more">
+                    <p>Test Cases</p>
+                    <p>0/0/1</p>
+                    <button type="button"><p>Add Test</p></button>
+                    <div class="more">
+                        <select name="" id="more">
+                            <option value=""><p>More</p></option>
+                            <option value=""><p>Add pairs of Testcases From Files</p></option>
+                            <option value=""><p>Check All</p></option>
+                            <option value=""><p>Uncheck All</p></option>
+                            <option value=""><p>Uncheck Accept</p></option>
+                            <option value=""><p>Invert</p></option>
+                            <option value=""><p>Delete All</p></option>
+                            <option value=""><p>Delete Empty</p></option>
+                            <option value=""><p>Delete Checked</p></option>
+                            <option value=""><p>Copy Test Cases</p></option>
+                            <option value=""><p>Paste Test Cases</p></option>
+                            <option value=""><p>Copy Output to Expected</p></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="checkers">
+                    <p>Checkers:</p>
+                    <select name="" id="checker">
+                        <option value="">Ignore trailing spaces</option>
+                        <option value="">Strictly the same</option>
+                        <option value="">ncmp - Compare int64s</option>
+                        <option value="">ncmp4 - Compare doubles, max error 1e-4</option>
+                        <option value="">ncmp6 - Compare doubles, max error 1e-6</option>
+                        <option value="">ncmp9 - Compare doubles, max error 1e-9</option>
+                        <option value="">wcmp - Compare tokens</option>
+                        <option value="">nyesno - Compare YES/NOs, case insensitive</option>
+                    </select>
+                    <button type="button">Add Checker</button>
+                </div>
+                <div class="in-out-expect">
+                    <div class="input">
+                        <input type="checkbox" id="check">
+                        <label for="check"></label>
+                        <p>Input #1</p>
+                        <button type="button">Run</button>
+                        <textarea name="" id="code-input-small" cols="18" rows="15">
+                        </textarea>
+                    </div>
+                    <div class="output">
+                        <p>Output #1</p>
+                        <button type="button">**</button>
+                        <textarea name="" id="code-output" cols="18" rows="15">
+                        </textarea>
+                    </div>
+                    <div class="expected">
+                        <p>Expected #1</p>
+                        <button>Del</button>
+                        <textarea name="" id="code-expected" cols="20" rows="15">
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
